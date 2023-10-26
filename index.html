@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-menu{
+            background-color: #0398dc;
+            padding: 10px 0;
+        }
+        .main-menu ul{
+            width: 100%;
+            justify-content: space-around;
+            list-style: none;
+        }
+        .main-menu li{
+            font-size: 25px;
+            color: #fff;
+            font-weight: 600;
+            transition: all .1s;
+            cursor: pointer;
+        }
+        .main-menu li:hover{
+            border-bottom: 3px solid #fff;
+        }
+        .main-row{
+            width: 100%;
+            padding: 40px 0;
+            flex-wrap: wrap;
+        }
+        .main-container{
+            max-width: 1400px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .main-column{
+            width: 50%;
+            border-top: 1px solid #bdbfc4;
+            padding: 20px;
+        }
+        .main-column-duo-last-child{
+            border-bottom: 1px solid #bdbfc4;
+        }
+        .text-column h3{
+            font-size: 22px;
+        }
+        .text-column p{
+            font-size: 18px;
+            color: #6c6d6f;
+        }
+        .min-col-img{
+            border-radius: 10px;
+        }
+        .mini-column{
+            column-gap: 10px;
+        }
+        .main-border{
+            border-right: 1px solid #bdbfc4;
+        }
+        .img-col,
+        .hero-text{
+            width: 50%;
+        }
+        .hero-img{
+            width: 100%;
+        }
+        .hero-text{
+            padding: 20px;
+        }
+        @media screen and (max-width: 749px) {
+            .main-menu li{
+                font-size: 16px;
+            }
+            .text-column h3{
+                font-size: 18px;
+            }
+            .text-column p{
+                font-size: 15px;
+            }
+            .main-column{
+                width: 100%;
+            }
+            .img-col,
+            .hero-text{
+               width: 100%;
+            }
+            .info-column{
+                flex-direction: column;
+            }
+            .hero-text h2{
+                font-size: 18px;
+            }
+            .hero-text{
+                text-align: center;
+            }
+            .main-border{
+                border-right: 0;
+            }
+        }
+    </style>
+    <nav class="main-menu d-flex align-items-center">
+        <ul class="d-flex align-items-center">
+            <li>
+                Home
+            </li>
+            <li>
+                About
+            </li>
+            <li>
+                Product
+            </li>
+            <li>
+                Content
+            </li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <div class="main-row d-flex">
+            <div class="main-column main-border">
+                <div class="mini-column d-flex">
+                    <div class="img-column">
+                        <img class="min-col-img" src="369711.14.png" alt="">
+                    </div>
+                    <div class="text-column">
+                        <h3>
+                            Interview: Boult and Southee talk about their partnership and friendship
+                        </h3>
+                        <p>
+                            7 hrs ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-column">
+                <div class="mini-column d-flex">
+                    <div class="img-column">
+                        <img class="min-col-img" src="369711.142.png" alt="">
+                    </div>
+                    <div class="text-column">
+                        <h3>
+                            Ligament damage rules Hardik out of England match                        
+                        </h3>
+                        <p>
+                            25-Oct-2023
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-column main-border">
+                <div class="mini-column d-flex">
+                    <div class="img-column">
+                        <img class="min-col-img" src="369803.6.png" alt="">
+                    </div>
+                    <div class="text-column">
+                        <h3>
+                            Shakib in Dhaka for short training stint with personal mentor                        
+                        </h3>
+                        <p>
+                            19 hrs ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-column">
+                <div class="mini-column d-flex">
+                    <div class="img-column">
+                        <img class="min-col-img" src="369906.6.png" alt="">
+                    </div>
+                    <div class="text-column">
+                        <h3>
+                            Stats - Maxwell smashes fastest ODI World Cup century                        
+                        </h3>
+                        <p>
+                            19 hrs ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-column main-border main-column-duo-last-child">
+                <div class="mini-column d-flex">
+                    <div class="img-column">
+                        <img class="min-col-img" src="000.png" alt="">
+                    </div>
+                    <div class="text-column">
+                        <h3>
+                            DY Patil Stadium to host India's first women's Test since 2014                        
+                        </h3>
+                        <p>
+                            54 min ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-column main-column-duo-last-child">
+                <div class="mini-column d-flex">
+                    <div class="img-column">
+                        <img class="min-col-img" src="222.png" alt="">
+                    </div>
+                    <div class="text-column">
+                        <h3>
+                            WBBL: Athapaththu stars again in powerful Thunder display                        
+                        </h3>
+                        <p>
+                            2 hrs ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="info-row">
+            <div class="info-column d-flex align-items-center justify-content-center">
+                <div class="img-col">
+                    <img class="hero-img" src="123.png" alt="">
+                </div>
+                <div class="hero-text">
+                    <h2>
+                        The Dutch Bulldog is older, wiser, and providing the energy Netherlands thrive on
+                    </h2>
+                    <p>
+                        Firdose Moonda
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="row">
+            <div class="img-column-info">
+                <img class="info-ionic-main-img" src="" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
